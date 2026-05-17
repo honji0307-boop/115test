@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>會考解析首頁</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Microsoft JhengHei", sans-serif;
+      background: linear-gradient(to bottom, #f0f4ff, #dfe9f7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-top: 50px;
+      color: #333;
+      font-size: 36px;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px;
+      margin-top: 80px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      width: 220px;
+      height: 220px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-decoration: none;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    }
+
+    .icon {
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 80px;
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>會考解析首頁</h1>
+
+  <div class="container">
+
+    <!-- 南一版 -->
+    <a class="card"
+       href="https://sites.google.com/view/nanicap/%E9%A6%96%E9%A0%81"
+       target="_blank">
+      <div class="icon">📘</div>
+      <div class="title">南一版</div>
+    </a>
+
+    <!-- 翰林版 -->
+    <a class="card"
+       href="https://exam.hle.com.tw/"
+       target="_blank">
+      <div class="icon">📗</div>
+      <div class="title">翰林版</div>
+    </a>
+
+    <!-- 康軒版 -->
+    <a class="card"
+       href="https://945cloud.knsh.com.tw/J/promo/cap/"
+       target="_blank">
+      <div class="icon">📙</div>
+      <div class="title">康軒版</div>
+    </a>
+
+  </div>
+
+  <div class="footer">
+    【學園社為您整理如上】
+  </div>
+
+</body>
+</html>
